@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.HospitalPageController">
+   <children>
+      <Label fx:id="hospitalName" alignment="CENTER" layoutX="198.0" layoutY="14.0" maxWidth="1.7976931348623157E308" prefHeight="52.0" prefWidth="204.0" text="Hospital Name" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="198.0" AnchorPane.rightAnchor="198.0">
+         <font>
+            <Font name="Avenir Black" size="28.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="addressBox" editable="false" layoutX="228.0" layoutY="101.0" maxWidth="-Infinity" prefHeight="39.0" prefWidth="234.0" wrapText="true" AnchorPane.leftAnchor="228.0" AnchorPane.rightAnchor="138.0">
+         <font>
+            <Font name="Avenir Roman" size="13.0" />
+         </font></TextArea>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="217.0" layoutX="109.0" layoutY="132.0" stroke="WHITE" strokeType="INSIDE" width="4.0" AnchorPane.leftAnchor="109.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="217.0" layoutX="502.0" layoutY="132.0" stroke="WHITE" strokeType="INSIDE" width="4.0" AnchorPane.rightAnchor="94.0" />
+      <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#homeButtonClicked" style="-fx-background-color: black;" text="HOME" textFill="WHITE" />
+      <TextArea fx:id="phoneBox" editable="false" layoutX="228.0" layoutY="159.0" prefHeight="39.0" prefWidth="234.0" AnchorPane.leftAnchor="228.0" AnchorPane.rightAnchor="138.0" />
+      <TextArea fx:id="waitBox" editable="false" layoutX="228.0" layoutY="277.0" prefHeight="39.0" prefWidth="234.0" AnchorPane.leftAnchor="228.0" AnchorPane.rightAnchor="138.0" />
+      <TextArea fx:id="hourBox" editable="false" layoutX="228.0" layoutY="220.0" prefHeight="39.0" prefWidth="234.0" AnchorPane.leftAnchor="228.0" AnchorPane.rightAnchor="138.0" />
+      <TextArea fx:id="ratingBox" editable="false" layoutX="228.0" layoutY="337.0" prefHeight="39.0" prefWidth="234.0" AnchorPane.leftAnchor="228.0" AnchorPane.rightAnchor="138.0" />
+      <ImageView fitHeight="52.0" fitWidth="57.0" layoutX="141.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/Users/Owner/Documents/GitHub/lhd/src/src/images/noun_Address_2667551.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="52.0" fitWidth="57.0" layoutX="152.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="146.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/Users/Owner/Documents/GitHub/lhd/src/src/images/noun_Phone_2278350.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="44.0" layoutX="146.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/Users/Owner/Documents/GitHub/lhd/src/src/images/noun_open_2392340.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="44.0" layoutX="146.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/Users/Owner/Documents/GitHub/lhd/src/src/images/noun_Circle%20Star_542578.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="52.0" fitWidth="57.0" layoutX="140.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/Users/Owner/Documents/GitHub/lhd/src/src/images/noun_clock_2310543.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </ImageView>
+      <Text fill="WHITE" layoutX="228.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+         <font>
+            <Font name="Avenir Roman" size="13.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="228.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number" />
+      <Text fill="WHITE" layoutX="229.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wait Time" />
+      <Text fill="WHITE" layoutX="230.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rating" wrappingWidth="44.4625244140625" />
+      <Text fill="WHITE" layoutX="229.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently Open?" />
+      <Button fx:id="siteButton" layoutX="529.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#siteButtonClicked" prefHeight="27.0" prefWidth="53.0" style="-fx-background-color: black;" text="SITE" textFill="WHITE" AnchorPane.rightAnchor="25.0" />
+   </children>
+</AnchorPane>
